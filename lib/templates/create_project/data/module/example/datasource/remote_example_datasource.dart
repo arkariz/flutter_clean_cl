@@ -5,7 +5,6 @@ import 'example_datasource.dart';
 class RemoteExampleDatasource extends DatasourceHandler implements ExampleDatasource {
   @override
   Future<ExampleModel> getExample() {
-    // TODO: implement getExample
     throw UnimplementedError();
   }
 }

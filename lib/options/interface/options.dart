@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'package:dart_console/dart_console.dart';
-import 'package:flutte_clean_cli/options/create/create_enum.dart';
+import 'package:flutter_clean_cli/options/create/create_enum.dart';
 
 class Options {
 

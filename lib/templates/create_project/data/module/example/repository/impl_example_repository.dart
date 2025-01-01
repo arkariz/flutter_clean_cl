@@ -14,7 +14,6 @@ class ImplExampleRepository extends RepositoryHandler implements ExampleReposito
 
   @override
   Future<Either<Failure, Example>> getExample(RequestExample request) {
-    // TODO: implement getExample
     throw UnimplementedError();
   }
 }

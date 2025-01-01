@@ -1,9 +1,7 @@
 #!/usr/bin/env dart
 
 import 'package:args/args.dart';
-import 'package:flutte_clean_cli/commands/command_finder.dart';
-
-const String version = '0.0.1';
+import 'package:flutter_clean_cli/commands/command_finder.dart';
 
 final createParser = ArgParser()
   ..addOption(
@@ -36,7 +34,7 @@ ArgParser buildParser() {
 }
 
 void printUsage(ArgParser argParser) {
-  print('Usage: dart flutte_clean_cli.dart <flags> [arguments]');
+  print('Usage: dart flutter_clean_cli.dart <flags> [arguments]');
   print(argParser.usage);
 }
 

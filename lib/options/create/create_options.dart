@@ -1,8 +1,9 @@
 import 'dart:io';
-import 'package:flutte_clean_cli/options/create/create_enum.dart';
-import 'package:flutte_clean_cli/options/interface/options.dart';
+import 'package:flutter_clean_cli/options/create/create_enum.dart';
+import 'package:flutter_clean_cli/options/interface/options.dart';
 
 import '../../utils/console_output.dart';
+import '../../version.dart';
 
 class CreateOptions extends Options {
   @override
@@ -145,10 +146,10 @@ class CreateOptions extends Options {
   /// Returns the template directory for generating files.
   Directory _getTemplateDirectory() {
     final currentUri = Platform.script;
-    final absolutePath = Directory(currentUri.toFilePath()).parent.parent.path;
-    final dir = Directory("$absolutePath/lib/templates/create_project");
+    final absolutePath = Directory(currentUri.toFilePath()).parent.parent.parent.parent.path;
+    final dir = Directory("$absolutePath/hosted/pub.dev/flutter_clean_cli-$version/lib/templates/create_project");
     if (!dir.existsSync()) {
-      ConsoleOutput.log(errorOutput: 'Error: Template does not exist');
+      ConsoleOutput.log(errorOutput: 'Error: Template does not exist in ${dir.path}');
       exit(1);
     } else {
       return dir;

@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:dio_request_inspector/dio_request_inspector.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:toastification/toastification.dart';
-import 'package:flutter_localizations/src/material_localizations.dart';
 import 'presentation/core/generated/i18n/translations.g.dart';
 
 import 'data/services/network_service/base_network_service/interceptors/request_interceptor.dart';
@@ -26,6 +26,7 @@ void main() async {
       // Initialze Chukker Interceptor
       final dioRequestInspector = DioRequestInspector(
         isDebugMode: true,
+        // ignore: deprecated_member_use
         showFloating: false,
       );
       setRequestInspector(requestInspector: dioRequestInspector);

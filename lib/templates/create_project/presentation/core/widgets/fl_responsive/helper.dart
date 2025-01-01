@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 part of 'fl_responsive.dart';
 
 enum FLDeviceType { android, ios, fuchsia, web, windows, mac, linux }
