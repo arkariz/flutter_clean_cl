@@ -1,0 +1,30 @@
+name: flutte_clean_cli
+description: Clean architecture CLI for Flutter apps.
+version: 1.0.0
+# repository: https://github.com/my_org/my_repo
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+# Add regular dependencies here.
+dependencies:
+  args: ^2.4.2
+
+dev_dependencies:
+  dart_console: ^4.1.1
+  dio: any
+  dio_request_inspector: any
+  flutter_dotenv: any
+  logger: any
+  slang: any
+  slang_flutter: any
+  toastification: any
+  connectivity_plus: any
+  dartz: any
+  equatable: any
+  get_it: any
+  lints: any
+  shared_preferences: any
+  test: ^1.24.0
+  flutter:
+    sdk: flutter
