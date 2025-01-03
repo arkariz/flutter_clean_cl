@@ -1,13 +1,12 @@
 import 'dart:io';
 import 'package:dart_console/dart_console.dart';
-import 'package:flutter_clean_cli/options/create/create_enum.dart';
 
 class Options {
 
   final console = Console();
   int selectedIndex = 0;
   
-  List<Enum> options = [Create.project, Create.module];
+  List<Enum> options = [];
   void onSelectedOptions(Enum option) {}
 
   // Fungsi untuk menampilkan opsi

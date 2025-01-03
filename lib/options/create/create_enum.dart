@@ -1,1 +1,1 @@
-enum Create{project, module}
+enum Create{project, dataModule}
