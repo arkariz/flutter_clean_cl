@@ -13,6 +13,7 @@ import 'presentation/core/theme/app_theme.dart';
 import 'presentation/core/util/logger_util.dart';
 import 'presentation/core/widgets/fl_responsive/fl_responsive.dart';
 import 'presentation/flavor/flavor.dart';
+import 'presentation/module/example/example_screen.dart';
 
 void main() async {
   runZonedGuarded(
@@ -68,11 +69,7 @@ class MyApp extends StatelessWidget {
             }
           );
         },
-        home: const Scaffold(
-          body: Center(
-            child: Text('Hello World!'),
-          ),
-        ),
+        home: const ExampleScreen(),
       ),
     );
   }
